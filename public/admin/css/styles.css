@@ -1,0 +1,13 @@
+/*roles*/
+.hiddeRoleButtons {
+	display: none !important; 
+}
+
+.showRoleButtons {
+	display: flex;!important;
+}
+.margin_bottom_top_10 {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+

@@ -1,4 +1,7 @@
-<?php 
+<?php
+namespace App\Libraries; 
+
+use \PDO;
 /**
 *connect to database
 *pdo prepared statment
@@ -6,16 +9,16 @@
 *return results
 */
 class Database {
-	private $host = DB_HOST;
-	private $user = DB_USER;
-	private $password = DB_PASS;
-	private $dbName = DB_NAME;
-    //property to handle database
-	private $dbh;
-	//property queries statments
-	private $stmt;
-	//property to handle errors
-	private $error;
+		private $host = DB_HOST;
+		private $user = DB_USER;
+		private $password = DB_PASS;
+		private $dbName = DB_NAME;
+	    //property to handle database
+		private $dbh;
+		//property queries statments
+		private $stmt;
+		//property to handle errors
+		private $error;
 
 	public function __construct(){
 		//set dsn
@@ -59,7 +62,6 @@ class Database {
 	}
 	//excecute prepared stmt
 	public function execute(){
-
 		return $this->stmt->execute();
 	}
 	//get results set as array of objects
